@@ -13,8 +13,8 @@ class Application(models.Model):
     contacts = models.CharField(max_length=200)
     notes = models.CharField(max_length=300)
 
-    def __str__(self):
-        return self.company, self.job_title, self.date_listed, self.date_applied,self.follow_up, self.result, self.contacts, self.notes
+    def __repr__(self):
+        return 'Object: {}' .format(self.company, self.job_title, self.date_listed, self.date_applied, self.follow_up, self.result, self.contacts, self.notes)
 
     
     
