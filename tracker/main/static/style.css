@@ -1,0 +1,41 @@
+:root {
+    color: white;
+    background-color: black;
+}
+
+.apps {
+    display: flex;
+    flex-direction: row;
+}
+
+.company {
+    margin-left: 1em;
+}
+
+.job {
+    margin-left: 1em;
+}
+
+.result {
+    margin-left: 1em;
+}
+
+.listed {
+    margin-left: 1em;
+}
+
+.applied {
+    margin-left: 1em;
+}
+
+.fu {
+    margin-left: 1em;
+}
+
+.contacts {
+    margin-left: 1em;
+}
+
+.notes {
+    margin-left: 1em;
+}

@@ -4,17 +4,12 @@ from .models import  Application
 from .forms import AddApplication
 
 def home(response):
-    app = Application.objects.get()
+    application = Application.objects.all()
     context = {
-        "company": app.company,
-        "job_title": app.job_title,
-        "date_listed": app.date_listed,
-        "date_applied": app.date_applied,
-        "follow_up": app.follow_up,
-        "result": app.result,
-        "contacts": app.contacts,
-        "notes": app.notes
-    }
+        'application': application
+         } 
+       
+ 
     return render(response, "main/home.html", context)
 
 
