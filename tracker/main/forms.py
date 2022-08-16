@@ -7,4 +7,5 @@ class AddApplication(forms.Form):
     date_applied = forms.DateField(label="applied", required=True)
     follow_up = forms.BooleanField(label="follow-up")
     result = forms.CharField(label="result", max_length=20)
-    contacts = forms.CharField(label="contact", max_length=200)
+    contacts = forms.CharField(label="contacts", max_length=200)
+    notes = forms.CharField(label="notes", max_length=300)
