@@ -6,7 +6,8 @@
 Add Application Page
 
 <form method="POST" action="/add/">
-    {{form}}
+    {% csrf_token %}
+    {{form.as_p}}
     <button type="submit", name="save">Add</button>
 </form>
 
