@@ -12,6 +12,7 @@ class Application(models.Model):
     result = models.CharField(max_length=20)
     contacts = models.CharField(max_length=200)
     notes = models.CharField(max_length=300)
+    link = models.CharField(max_length=200)
 
     def __repr__(self):
         return 'Object: {}' .format(self.company, self.job_title, self.date_listed, self.date_applied, self.follow_up, self.result, self.contacts, self.notes)
