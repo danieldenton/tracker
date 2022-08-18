@@ -5,6 +5,8 @@
 {% block content %}
 Add Application Page
 
+<a href="/">Home</a>
+
 <form method="POST" action="/add/">
     {% csrf_token %}
     {{form.as_p}}

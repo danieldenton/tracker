@@ -29,7 +29,7 @@ def add(response):
             a = Application(company=com, job_title=jt, date_listed=dl, date_applied=da,follow_up=fu, result=r, contacts=con, notes=n, link=l)
             a.save()
 
-        return render(response, "main/home.html")
+        return HttpResponseRedirect("/l")
 
     else:
         form = AddApplication()
