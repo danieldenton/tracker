@@ -9,3 +9,4 @@ class AddApplication(forms.Form):
     result = forms.CharField(label="result", max_length=20)
     contacts = forms.CharField(label="contacts", max_length=200)
     notes = forms.CharField(label="notes", max_length=300)
+    link = forms.CharField(label="link", max_length=200)

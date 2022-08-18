@@ -1,0 +1,17 @@
+{% extends 'main/base.html' %}
+
+{% block title %}Add Application{% endblock %}
+
+{% block content %}
+Add Application Page
+
+<form method="POST" action="/add/">
+    {{form}}
+    <button type="submit", name="save">Add</button>
+</form>
+
+
+
+
+
+{% endblock %}

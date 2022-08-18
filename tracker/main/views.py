@@ -14,9 +14,6 @@ def home(response):
 
 
 def add(response):
-    if response.method == "POST":
-        form = AddApplication(response.POST)
-        if form.is_valid():
-            n = form.cleaned_data["name"]
-           
-    return render(response, "main/add.html", {})
+    form = AddApplication()
+        
+    return render(response, "main/add.html", {'form': form})
