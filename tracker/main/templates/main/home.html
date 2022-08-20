@@ -1,12 +1,8 @@
 {% extends 'main/base.html' %}
 
-
-
 {% block content %}
 
 <a href="/add">Add Application</a>
-
-<form method="POST" action="#">
     {% for a in application %}
     <div class="apps">
     <p class="company">{{a.company}}</p>
@@ -17,8 +13,8 @@
     <p class="contacts">{{a.contacts}}</p>
     <p class="notes">{{a.notes}}</p>
     <a href="{{a.link}}" class="link">see the listing</a>
+    <a href="/{{a.id}}" class="edit-btn">Edit</a>
     </div>
     {% endfor %}  
-    <button></button>
 </form> 
 {% endblock %}
