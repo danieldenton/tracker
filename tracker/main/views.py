@@ -5,8 +5,10 @@ from .forms import ApplicationForm
 
 def home(request):
     application = Application.objects.all()
+    num = len(application)
     context = {
-        'application': application
+        'application': application,
+        'num': num
          } 
 
     return render(request, "main/home.html", context)
