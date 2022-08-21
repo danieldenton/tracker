@@ -1,16 +1,20 @@
 {% extends 'main/base.html' %}
 
+{% block title %}Edit Application{% endblock %}
+
 {% block content %}
+<div class="edit-div">
+<h1>Edit Application Page</h1>
 
-Edit Application Page
-
-<a href="/">Home</a>
+<a href="/" class="page-link">Home</a>
 
 <form method="POST" action="">
     {% csrf_token %}
     {{form.as_p}}
-    <button type="submit", name="save">save</button>
+    <button type="submit", name="save">Save</button>
 </form>
+<a href="/{{application.id}}/delete/" class="delete-link">Delete</a>
 
+</div>
 
 {% endblock %}

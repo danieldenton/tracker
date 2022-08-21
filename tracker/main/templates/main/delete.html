@@ -1,0 +1,18 @@
+{% extends 'main/base.html' %}
+
+{% block title %}Delete Application{% endblock %}
+
+{% block content %}
+<h1>Are you sure you want to delete this application?</h1>
+    <p class="company">{{application.company}}</p>
+    <p class="job">{{application.job_title}}</p>
+    <p class="result">{{application.result}}</p>
+    <p class="contacts">{{application.contacts}}</p>
+    <p class="notes">{{application.notes}}</p>
+<form method="POST" action="">
+    {% csrf_token %}
+    <a href="/{{application.id}}/">Cancel</a>
+    <button type="submit" name="confirm">Confirm</button>
+</form>
+
+{% endblock %}

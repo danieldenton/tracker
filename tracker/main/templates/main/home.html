@@ -2,7 +2,7 @@
 
 {% block content %}
 
-<a href="/add">Add Application</a>
+<a href="/add" class="page-link">Add Application</a>
     {% for a in application %}
     <div class="apps">
     <p class="company">{{a.company}}</p>
@@ -12,8 +12,8 @@
     <p class="applied">{{a.date_applied}}</p>
     <p class="contacts">{{a.contacts}}</p>
     <p class="notes">{{a.notes}}</p>
-    <a href="{{a.link}}" class="link">see the listing</a>
-    <a href="/{{a.id}}" class="edit-btn">Edit</a>
+    <a href="{{a.link}}" class="listing-link">see the listing</a>
+    <a href="/{{a.id}}" class="edit-link">Edit</a>
     </div>
     {% endfor %}  
 </form> 

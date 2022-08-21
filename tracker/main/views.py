@@ -29,21 +29,25 @@ def add(request):
 def edit(request, id):
     application = Application.objects.get(id=id)
     form = ApplicationForm(instance=application)
-    context = {'form': form}
+    context = {'form': form, 'application': application}
     if request.method == "POST":
         form = ApplicationForm(request.POST, instance=application)
         if form.is_valid(): 
             form.save(commit=False)
-
+            
         return redirect('/')
-
-    elif request.method == "DELETE":
-        form = ApplicationForm(request.DELETE, instance=application)
-        if form.is_valid(): 
-            form.object.update()
-
-        return redirect('/')
-
 
     return render(request, 'main/edit.html', context)
+
+
+def delete(request, id):
+    application = Application.objects.get(id=id)
+    if request.method == "POST":
+        application.delete()
+        return redirect('/')
+
+    context = {'application': application}
+
+    return render(request, 'main/delete.html', context)
+
 

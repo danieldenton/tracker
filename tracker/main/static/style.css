@@ -1,11 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap');
+
 :root {
-    color: white;
+    color: rgb(245, 56, 3);
     background-color: black;
+    text-align: center;
+    font-family: 'Space Grotesk';
 }
 
 .apps {
+
     display: flex;
     flex-direction: row;
+}
+
+.page-link {
+    font-size: 1.5em;
+    color: orange;
+    text-decoration: none;
 }
 
 .company {
@@ -38,4 +49,43 @@
 
 .notes {
     margin-left: 1em;
+}
+
+.listing-link {
+    color: white;
+    margin-left: 1em;
+    margin-top: 1em;
+    text-decoration: none;
+}
+
+.listing-link:focus {
+    color: white;
+}
+
+.listing-link:hover {
+    color: red;
+}
+
+.edit-link {
+    color: white;
+    margin-left: 1em;
+    margin-top: 1em;
+    text-decoration: none;
+}
+
+.edit-link:hover {
+    color: red;
+}
+
+.edit-div {
+    display: block;
+}
+
+.delete-link {
+    color: white;
+    text-decoration: none;
+}
+
+.delete-link:hover {
+    color: red;
 }
