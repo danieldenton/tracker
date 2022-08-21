@@ -2,15 +2,15 @@ from django.forms import Form, ModelForm, CharField, DateField
 from .models import Application
 
 
-class AddApplication(ModelForm):
+class ApplicationForm(ModelForm):
     class Meta:
         model = Application
         fields = '__all__'
 
-class EditApplication(ModelForm):
-    class Meta:
-        model = Application
-        fields = ['notes', 'result']
+# class EditApplication(ModelForm):
+#     class Meta:
+#         model = Application
+#         fields = ['notes', 'result']
 
 # class AddApplication(Form):
 #     company = CharField(label="company", max_length=100, required=True)

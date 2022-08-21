@@ -6,14 +6,8 @@ Edit Application Page
 
 <a href="/">Home</a>
 
-<form method="PUT" action="/">
+<form method="POST" action="">
     {% csrf_token %}
-    <p class="company">{{a.company}}</p>
-    <p class="job">{{a.job_title}}</p>
-    <p class="listed">{{a.date_listed}}</p>
-    <p class="applied">{{a.date_applied}}</p>
-    <p class="contacts">{{a.contacts}}</p>
-    <a href="{{a.link}}" class="link">see the listing</a> 
     {{form.as_p}}
     <button type="submit", name="save">save</button>
 </form>
