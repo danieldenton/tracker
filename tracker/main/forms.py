@@ -1,11 +1,13 @@
-from django.forms import Form, ModelForm, CharField, DateField
+from django import forms
 from .models import Application
 
 
-class ApplicationForm(ModelForm):
+class ApplicationForm(forms.ModelForm):
+
     class Meta:
         model = Application
         fields = '__all__'
+
 
 # class EditApplication(ModelForm):
 #     class Meta:
