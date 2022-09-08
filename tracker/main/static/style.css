@@ -7,17 +7,22 @@
     font-family: 'Space Grotesk';
 }
 
+.page-link {
+    font-size: 1.5em;
+    color: white;
+    text-decoration: none;
+}
+
+.page-link:hover {
+    color: orange;
+}
+
 .apps {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     font-size: .8em;
-}
-
-.page-link {
-    font-size: 1.5em;
-    color: orange;
-    text-decoration: none;
+    border: yellow;
 }
 
 .company {
@@ -35,7 +40,7 @@
     align-items: center;
     margin-left: 1em;
     width: 17em;
-    color: purple;
+    color: rgb(123, 46, 199);
 }
 
 .result {
@@ -87,7 +92,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    color: white;
+    color: rgb(123, 46, 199);
     margin-left: 1em;
     margin-top: 1em;
     text-decoration: none;
@@ -97,22 +102,19 @@
     color: white;
 }
 
-.listing-link:hover {
-    color: red;
-}
 
 .edit-link {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    color: white;
+    color: red;
     margin-left: 1em;
     margin-top: 1em;
     text-decoration: none;
 }
 
 .edit-link:hover {
-    color: red;
+    color: white;
 }
 
 .edit-div {

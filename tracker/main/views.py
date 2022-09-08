@@ -35,7 +35,7 @@ def edit(request, id):
     if request.method == "POST":
         form = ApplicationForm(request.POST, instance=application)
         if form.is_valid(): 
-            form.save(commit=False)
+            form.save()
             
         return redirect('/')
 
