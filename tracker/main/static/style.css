@@ -1,16 +1,17 @@
-@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300&display=swap');
 
 :root {
-    color: rgb(245, 56, 3);
-    background-color: black;
+    background-color: rgb(27, 27, 27);
+    color: white;
     text-align: center;
     font-family: 'Space Grotesk';
 }
 
 .apps {
-
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
+    font-size: .8em;
 }
 
 .page-link {
@@ -20,38 +21,72 @@
 }
 
 .company {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin-left: 1em;
+    width: 10em;
+    color: rgb(0, 76, 255);
 }
 
 .job {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin-left: 1em;
+    width: 17em;
+    color: purple;
 }
 
 .result {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin-left: 1em;
+    width: 3.4em;
+    color: rgb(245, 56, 3);
 }
 
 .listed {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin-left: 1em;
+    width: 8em;
+    color: orange;
 }
 
 .applied {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin-left: 1em;
-}
-
-.fu {
-    margin-left: 1em;
+    width: 8em;
+    color: yellow;
 }
 
 .contacts {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin-left: 1em;
+    width: 15em;
+    color: green;
 }
 
 .notes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin-left: 1em;
+    width: 15em;
+    color: rgb(0, 76, 255);
 }
 
 .listing-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     color: white;
     margin-left: 1em;
     margin-top: 1em;
@@ -67,6 +102,9 @@
 }
 
 .edit-link {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
     color: white;
     margin-left: 1em;
     margin-top: 1em;
